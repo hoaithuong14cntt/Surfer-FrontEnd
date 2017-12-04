@@ -1,49 +1,49 @@
 .social {
-    padding-top: 80px;
-    margin-bottom: -140px;
+  padding-top: 80px;
+  margin-bottom: -140px;
+  @include breakpoint(small-desktop) {
+    margin-bottom: -115px;
+  }
+
+  @include breakpoint(tablet) {
+    margin-bottom: 0;
+    padding-bottom: 5%;
+  }
+  &_wrp {
+    display: flex;
     @include breakpoint(small-desktop) {
-        margin-bottom: -115px;
+      justify-content: space-between;
     }
+  }
 
+  &_instagram {
+    position: relative;   
     @include breakpoint(tablet) {
-        margin-bottom: 0;
-        padding-bottom: 5%;
+      width: 40%;
     }
-    &_wrp {
-        display: flex;
-        @include breakpoint(small-desktop) {
-           justify-content: space-between;
-        }
-    }
-
-    &_instagram {
-        position: relative;
-        @include breakpoint(tablet) {
-            width: 40%;
-        }
-        h2 {
-            left: -11px;
-            top: -65px;
-            @media (min-width: 1200px) { 
-                font-size: 96px;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
+    h2 {
+      left: -11px;
+      top: -65px;
+      @media (min-width: 1200px) { 
+        font-size: 96px;
+      }
     }
 
-    &_fb {
-        margin-left: 3%;
-        margin-top: 4%;
-        @include breakpoint(tablet) {
-            width: 56%;
-            margin: 0;
-            align-self: flex-end;
-        }
-        img {
-            width: 100%;
-        }
+    img {
+      width: 100%;
     }
+  }
+
+  &_fb {
+    margin-left: 3%;
+    margin-top: 4%;
+    @include breakpoint(tablet) {
+      width: 56%;
+      margin: 0;
+      align-self: flex-end;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }

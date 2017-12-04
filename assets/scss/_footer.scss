@@ -1,150 +1,150 @@
 .footer {
-    background-color: #000;
-    color: #fff;
-    z-index: -1;
-    padding-bottom: 70px;
-    padding-top: 2%;
+  background-color: #000;
+  color: #fff;
+  z-index: -1;
+  padding-bottom: 70px;
+  padding-top: 2%;
 
+  @include breakpoint(tablet) {
+    padding-bottom: 2%;
+  }
+  &_wrp {
+    display: flex;
     @include breakpoint(tablet) {
-        padding-bottom: 2%;
+      flex-direction: column-reverse;
     }
-    &_wrp {
-        display: flex;
-        @include breakpoint(tablet) {
-            flex-direction: column-reverse;
-        }
-    }
+  }
 
-    &_copyright {
-        flex: 1;
-        align-self: center;
-        @include breakpoint(tablet) {
-            margin-top: 4%;
-        }
-       
-        p {
-            color: #3C3C3C;
-            font-family: Raleway;
-            font-size: 12px;
-            font-weight: 600;
-        }
+  &_copyright {
+    flex: 1;
+    align-self: center;
+    @include breakpoint(tablet) {
+      margin-top: 4%;
     }
 
-    &_categories {
-        width: 50%;
-        @include breakpoint(small-desktop) {
-            width: 43%;
-        }
-        @include breakpoint(tablet) {
-            width: 100%;
-        }
+    p {
+      color: #3C3C3C;
+      font-family: Raleway;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  &_categories {
+    width: 50%;
+    @include breakpoint(small-desktop) {
+      width: 43%;
+    }
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+  }
+
+  &_cat-wrp {
+    @include breakpoint(tablet) {
+      display: flex;
     }
 
-    &_cat-wrp {
-        @include breakpoint(tablet) {
-           display: flex;
-        }
+    @include breakpoint(phone) {
+      flex-direction: column;
+    }
+  }
 
-        @include breakpoint(phone) {
-            flex-direction: column;
-        }
+  &_list {
+    @include breakpoint(tablet) {
+      flex: 1;
     }
 
-    &_list {
-        @include breakpoint(tablet) {
-           flex: 1;
-        }
-
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 15%;
-            @include breakpoint(tablet) {
-                margin-bottom: 0;
-            }
-        }
-
-        li {
-            width: 50%;
-            padding-bottom: 10px;
-        }
-
-        a {
-            color: white;
-        }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15%;
+      @include breakpoint(tablet) {
+        margin-bottom: 0;
+      }
     }
 
-    &_wave-icon {
-        background: url(../img/Waves-col-2.png) no-repeat;
-        background-position: center;
-        background-position-y: inherit;
-        width: 30px;
-        height: 17px;
-        display: inline-block;
+    li {
+      width: 50%;
+      padding-bottom: 10px;
     }
 
-    &_subscribe {
-        @include breakpoint(phone) {
-            margin-top: 3%;
-        }
+    a {
+      color: white;
     }
+  }
 
-    &_label {
-        font-family: Montserrat;
-        color:  $color-white;
-        font-size: 16px;
-        font-weight: 400;
-    }
+  &_wave-icon {
+    background: url(../img/Waves-col-2.png) no-repeat;
+    background-position: center;
+    background-position-y: inherit;
+    width: 30px;
+    height: 17px;
+    display: inline-block;
+  }
 
-    &_input {
-        margin-top: 10px;
-        position: relative;
-        width: 245px;
-        overflow: hidden;
-        
-        input {
-            border: none;
-            background: none;
-            border-bottom: 1px solid #4E4E4E;
-            color: $color-white;
-            padding: 8px 0 8px 22px;
-            width: 100%;
-            &:focus {
-                outline: 0;
-            }
-       }
+  &_subscribe {
+    @include breakpoint(phone) {
+      margin-top: 3%;
     }
+  }
 
-    &_envelop-icon {
-        width: 20px;
-        height: 27px;
-        display: inline-block;
-        background-position: center;
-        background: url(../img/icon-mail.png) no-repeat;
-        background-position-y: center;
-        background-size: 63%;
-        position: absolute;
-    }
+  &_label {
+    font-family: Montserrat;
+    color:  $color-white;
+    font-size: 16px;
+    font-weight: 400;
+  }
 
-    &_send {
-        background-color: #00b0ff;
-        border-radius: 50%;
-        width: 17px;
-        height: 17px;
-        display: inline-block;
-        background-position: center;
-        background-image: url(../img/Arrow-right.png);
-        background-size: 45%;
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 5px 0;
-        cursor: pointer;
-    }
+  &_input {
+    margin-top: 10px;
+    position: relative;
+    width: 245px;
+    overflow: hidden;
 
-    &_envelop-icon {
-        
+    input {
+      border: none;
+      background: none;
+      border-bottom: 1px solid #4E4E4E;
+      color: $color-white;
+      padding: 8px 0 8px 22px;
+      width: 100%;
+      &:focus {
+        outline: 0;
+      }
     }
+  }
+
+  &_envelop-icon {
+    width: 20px;
+    height: 27px;
+    display: inline-block;
+    background-position: center;
+    background: url(../img/icon-mail.png) no-repeat;
+    background-position-y: center;
+    background-size: 63%;
+    position: absolute;
+  }
+
+  &_send {
+    background-color: #00b0ff;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-position: center;
+    background-image: url(../img/Arrow-right.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+  &_envelop-icon {
+
+  }
 }
 
