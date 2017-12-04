@@ -1,0 +1,152 @@
+.about-us {
+    position: relative;
+    padding: 80px 0;
+   
+    &_wrp {
+        background: url(../img/overlay.png) no-repeat;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 530px;
+        @include breakpoint(tablet) {
+           height: auto;
+           background: transparent;
+        }
+    }
+
+    &_title {
+        font-size: 117px;
+        position: absolute;
+        top: -80px;
+        width: 100%;
+        text-align: center;
+        color: rgba(0,0,0,0.1);
+        z-index: -1;
+        @include breakpoint(small-desktop) {
+            font-size: 90px;
+            top: -63px;
+        }
+        @include breakpoint(tablet) {
+            position: unset;
+            font-size: 50px;
+            margin-bottom: 3%;
+        }
+    }
+
+    &_ctn {
+        position: absolute;
+        bottom: -60px;
+        @include breakpoint(tablet) {
+            position: unset;
+        }
+    }
+
+    &_ctn-wrp {
+        display: flex;
+        @include breakpoint(tablet) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &_txt {
+        background: #ffffff;
+        display: flex;
+        width: 45%;
+        @include breakpoint(small-desktop) {
+            width: 55%;
+        }
+        @include breakpoint(tablet) {
+            width: 100%;
+        }
+    }
+
+    &_txt-wrp {
+        padding: 8% 10% 3% 50%;
+        @include breakpoint(tablet) {
+            padding: 15px;
+        }
+       
+    }
+
+    &_txt-title {
+        font-family: Montserrat;
+        color:  #000000;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    &_underline {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &_txt-ctn {
+        font-family: PlayfairDisplay;
+        color: #000000;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 30px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    &_txt-wrap {
+        width: 50%;
+        padding: 5%;
+        padding-left: 50%;
+        padding-top: 13%;
+    }
+
+    &_view-more {
+        
+    }
+
+    &_clip {
+        align-self: flex-end;
+        position: relative;
+        margin-left: 2%;
+        box-shadow: 10px 24px 51px rgba(88, 88, 88, 0.56);
+        height: 200px;
+        // display: inline-block;
+        @include breakpoint(small-desktop) {
+            align-self: center;    
+        }
+        @include breakpoint(tablet) {
+            margin: 0;
+            width: 100%;
+            box-shadow: unset;
+            margin-bottom: 2%;
+        }
+
+        video {
+            height: 100%;
+            @include breakpoint(tablet) {
+                width: 100%;
+            }
+        }
+    }
+
+    &_play {
+        position: absolute;
+		top: 50%;
+		left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+        button {
+            background: none;
+            color: #fff;
+            border: 3px solid #fff;
+            padding: 13px;
+            border-radius: 50%;
+            margin: 15px;
+
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+}

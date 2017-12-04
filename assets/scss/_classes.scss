@@ -1,0 +1,65 @@
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	// padding-right: 15px;
+	// padding-left: 15px;
+	width: 1170px;
+	@include breakpoint(small-desktop) {
+		width: 970px;
+	}
+	@include breakpoint(tablet) {
+		width: 750px;
+	}
+	@include breakpoint(small-tablet) {
+		width: auto;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+.btn {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	// text-align: center;
+	padding: 13px 30px;
+	background: #c2c2c2;
+	// position: absolute;
+
+	&-blue {
+		color:  #ffffff;
+		background-color: #00b0ff;
+	}
+}
+
+.view-more {
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #00b0ff;
+	a {
+		color:  #00b0ff;
+		font-family: Montserrat;
+		font-weight: 400;
+		font-size: 16px;
+	}
+}
+
+.ctn-title {
+	font-size: 117px;
+	position: absolute;
+	top: -80px;
+	width: 100%;
+	text-align: center;
+	color: rgba(0,0,0,0.1);
+	z-index: -1;
+	@include breakpoint(small-desktop) {
+		font-size: 90px;
+		top: -63px;
+	}
+	@include breakpoint(tablet) {
+		position: unset;
+		font-size: 50px;
+		margin-bottom: 3%;
+	}
+}
+

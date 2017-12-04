@@ -1,0 +1,45 @@
+@mixin breakpoint($point) {
+    //Desktop + Lap
+    @if $point == large-desktop {
+        @media (min-width: 1600px) { // width >= 1600
+            @content;
+        }
+    }
+    @else if $point == mid-desktop {
+        @media (max-width: 1599px) { // 1200 <= width <= 1599
+            @content;
+        }
+    }
+    @else if $point == small-desktop {
+        @media (max-width: 1199px) { // 992 <= width <= 1199
+            @content;
+        }
+    }
+    //Tablet
+    @else if $point == tablet {
+        @media (max-width: 991px) { // 768 <= width <= 991
+            @content;
+        }
+    }
+    @else if $point == small-tablet {
+        @media (max-width: 767px) {  // 600 <= width <= 767
+            @content;
+        }
+    }
+    //Phone
+    @else if $point == phone {
+        @media (max-width: 599px) { // 481 <= width <= 599
+            @content;
+        }
+    }
+    @else if $point == mid-phone {
+        @media (max-width: 480px) { // 321 <= width <= 480
+            @content;
+        }
+    }
+    @else if $point == small-phone {
+        @media (max-width: 320px) { // width <= 320
+            @content;
+        }
+    }
+}

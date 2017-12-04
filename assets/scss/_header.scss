@@ -1,0 +1,511 @@
+$height-nav: 80px;
+#header {
+	nav {
+		background: $bg-menu;
+		position: fixed;
+		width: 100%;
+    z-index: 10;
+	}
+
+	.bg-menu {
+    background-color: $color_black;
+    a {
+      color: $color-white !important;
+    }
+    
+    .menu_social-item {
+      background-color: $color-white;
+
+      a {
+        color: $color_black !important;
+      }
+    }
+  }
+
+	.menu {
+		&_wrp {
+			display: flex;
+		    padding: 25px 0;
+		    @include breakpoint(tablet) {
+				padding: 15px 0;
+			}
+			@include breakpoint(mid-phone) {
+				padding: 10px 0;
+			}
+		}
+
+		&_item {
+
+		}
+
+		&_logo {
+			width: 20%;
+			@include breakpoint(small-tablet) {
+				flex-grow: 1;
+			}
+
+			a {
+				font-family: Montserrat;
+				color: $color_black;
+				font-size: 25px;
+				font-weight: 700;
+				text-align: left;
+				@include breakpoint(mid-phone) {
+					font-size: 20px;
+				}
+			}
+		}
+
+		&_list {
+			width: 65%;
+			@include breakpoint(tablet) {
+				width: 80%;
+			}
+			@include breakpoint(small-tablet) {
+				display: none;
+				position: absolute;
+				top: $height-nav - 25;
+				left: 0;
+				width: 100%;
+				background: black;
+			}
+			@include breakpoint(mid-phone) {
+				top: $height-nav - 40;
+			}
+
+			ul {
+				display: flex;
+				text-align: center;
+				@include breakpoint(small-tablet) { 
+					flex-direction: column;
+					padding: 5px 0;
+					text-align: left;
+				}
+			}
+		}
+
+		&_list-item {
+			width: 20%;
+			@include breakpoint(small-tablet) { 
+				width: 100%;
+			}
+			    
+			a {
+				font-size: 14px;
+				font-family: Montserrat;
+				color:  $color_black;
+				font-weight: bold;
+				text-transform: uppercase;
+				padding: 6px 10px;
+				display: block;
+				&:hover {
+					color:  $color-white;
+					background-color: $hover-menu-item;
+				}
+				@include breakpoint(small-tablet) { 
+					color:  white;
+				}
+			}
+		}
+
+		&_social {
+			width: 15%;
+			@include breakpoint(tablet) {
+				display: none;
+			}
+
+			ul {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		&_social-item {
+		    width: 30px;
+		    height: 30px;
+		    background-color: $color_black;
+		    border-radius: 50px;
+		    cursor: pointer;
+		    margin-left: 8px;
+		    text-align: center;
+			a {
+				color: white;
+			    line-height: 30px;
+			    font-size: 12px;
+			}
+		}
+
+		&_toggle {
+			display: none;
+			align-self: center;
+			cursor: pointer;
+			@include breakpoint(small-tablet) {
+				display: block;
+			}
+
+			a {
+				color: white;
+				&:hover {
+					color:$menu-bar-color;
+				}
+			}
+		}
+	}
+
+	.introduce {
+		padding: $height-nav 0;
+		background: url(../img/Hero.png) no-repeat;
+		background-size: cover;
+		@include breakpoint(tablet) {
+			padding-top: $height-nav - 25;
+		}
+		@include breakpoint(mid-phone) {
+			padding-top: $height-nav - 40;
+		}
+    &_tabs {
+      position: absolute;
+      top: 50px;
+      right: -40px;
+      @media (max-width: 1300px) { 
+        display: none;
+      }
+    }
+
+    &_num-page {
+      background-color: $color_black;
+      color: $color-white;
+      padding: 12px;
+      display: inline-block;
+    }
+
+    &_arrow {
+      display: flex;
+      margin-left: 20px;
+      a {
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+
+      &-left {
+        background: $color-arrow-bg url(../img/Arrow-left.png) no-repeat;
+        background-position: center;
+      }
+
+      &-right {
+        background: $color-arrow-bg url(../img/Arrow-right.png) no-repeat;
+        background-position: center;
+      }
+    }
+
+		&_wrp {
+			
+		}
+
+		&_title {
+			margin-top: 10%;
+			@include breakpoint(small-tablet) {
+				display: none;
+			}
+
+			h2 {
+				font-family: Playfair Display;
+				color:  $color_black;
+				font-size: 50px;
+				font-style: italic;
+				text-align: center;
+				margin-bottom: 8px;
+				font-weight: 400;
+			}
+
+			p {
+				font-family: PlayfairDisplay;
+				color:  $color-white;
+				font-size: 24px;
+				font-style: italic;
+				text-align: center;
+				text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.64);
+			}
+		}
+
+		&_ctn {
+			margin-top: 10%;
+			background: white;
+			box-shadow: 5px 2px 34px #9c9c9c;
+			@include breakpoint(small-tablet) {
+				margin-top: 15px;
+			}
+		}
+
+		&_ctn-wrp {
+			display: flex;
+			@include breakpoint(tablet) {
+				flex-direction: column;
+			}
+		}
+		
+		&_img {
+			width: 50%;
+			background: url(../img/introduce3.png) no-repeat;
+			background-position: inherit;
+			background-size: cover;
+			@include breakpoint(tablet) {
+				width: 100%;
+			}
+		}
+
+		&_img-wrp {
+			display: flex;
+			padding: 15px;
+			@include breakpoint(tablet) {
+				padding: 15px 10%;
+			}
+
+			@include breakpoint(small-tablet) {
+				padding: 15px;
+				flex-direction: column;
+			}
+		}
+
+		&_main-img {
+			img {
+         width: 400px;
+         height: 600px;
+         @include breakpoint(phone) {
+          width: 90%;
+          height: 500px;
+         }
+
+         @include breakpoint(small-phone) {
+          height: 300px;
+         }
+       }
+			@include breakpoint(tablet) {
+				flex: 1;
+			}
+			@include breakpoint(small-tablet) {
+				overflow: hidden;
+				text-align: center;
+
+			}
+		}
+
+    &_img-hidden {
+      display: none;
+    }
+
+    &_main-item {
+      @include breakpoint(small-tablet) {
+        width: auto;
+        height: 100%;
+      }
+      @include breakpoint(phone){
+          width: 100%;
+      }         
+    }
+
+		&_other-img {
+			align-self: center;
+      width: 100%;
+      li {
+        border:1px solid $border-item-tab-images;
+        margin-bottom: 3px;
+        width: 64px;
+        height: 64px;
+        box-sizing: border-box;
+      }
+
+      li.active {
+        border: 3px solid $active-item-tab;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+			@include breakpoint(small-tablet) { 
+				display: flex;
+				li {
+					margin: 0 5%;
+					overflow: hidden;
+          box-sizing:border-box;
+				}
+			}
+		}
+
+		&_txt {
+			width: 50%;
+			position: relative;
+
+			@include breakpoint(tablet) {
+				width: 100%;
+			}
+		}
+
+		&_txt-wrp {
+			padding: 55px;
+		}
+
+		&_txt-title {
+			margin-bottom: 12px;
+			font-family: Montserrat;
+			color:  $color_black;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 26px;
+			text-align: left;
+		}
+
+		&_rate {
+			margin-bottom: 40px;
+			.rate_star {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.rate_item {
+				margin-right: 5px;
+
+				&.fa-star {
+					color: $rate;
+				}
+			}
+
+			.rate_num {
+				margin-left: 5px;
+			}
+		}
+
+		&_menu {
+      margin-bottom: 30px;
+		}
+
+		&_list {
+			display: flex;
+			flex-direction: row;
+			border-bottom: 1px solid $border-bottom-tabs-title;
+			margin-bottom: 25px;
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			box-sizing: border-box;
+		}
+
+    &_tabs-item {
+      margin: 0;
+      margin-right: 5%;
+      box-sizing: border-box;
+      padding:5px 0;
+      border-bottom: 2px solid transparent;
+      font-family: Raleway;
+      color:  $color-tabs-title;
+      font-size: .8em;
+      font-weight: 700;
+      text-align: left;
+      text-transform: uppercase;
+      cursor: pointer;
+      @include breakpoint(mid-phone) {
+        padding:0 10%;
+      }
+      a {
+        @include breakpoint(mid-phone) { 
+          font-size: 0;
+        }
+      }
+
+      i {
+        font-size: 0;
+        color: $color_black;
+
+        @include breakpoint(mid-phone) { 
+          font-size: 30px;
+        }
+      }
+
+      &.active {
+        border-bottom: 2px solid $active-item-tab;
+        top: 11px;
+        box-sizing: border-box;
+        color: $color_black;
+      }
+    }
+
+		&_change-txt {
+			p {
+				font-family: Raleway;
+				color:$color-change-txt;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				text-align: left;
+				height: 164px;
+				overflow: auto;
+			}
+		}
+
+		&_payments {
+			margin: 7% 0 13% 0;
+			span {
+				font-family: Montserrat;
+				color:  $color_black;
+				font-size: 24px;
+				font-weight: 700;
+				text-align: left;
+				margin-right: 27px;
+        @include breakpoint(mid-phone) {
+          font-size: 20px;
+        }
+			}
+
+			@include breakpoint(small-tablet) {
+				margin: 0;
+				margin-top: 5%;
+				margin-right: 15px;
+				display: inline-block;
+			}
+      a {
+        @include breakpoint(mid-phone) {
+          font-size: 0;
+          background-color: transparent;
+        }
+      }
+
+      i {
+        font-size: 0;
+        @include breakpoint(mid-phone) {
+          font-size: 20px;
+          background-color: $bg-color-payment;
+          box-sizing: border-box;
+          width: 60px;
+          height: 40px;
+          padding: 9px 18px;
+        }
+
+        @include breakpoint(small-phone) {
+          padding: 8px 18px;
+          margin: 12px 0 12px -27px;
+        }
+      }
+		}
+
+		&_view-more {
+      display: inline-block;
+      padding-bottom: 5px;
+      border-bottom: 2px solid $view-more;
+      a {
+        color:  $view-more;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        }
+      }
+		}
+	}
+ 
+
+  
+
+
