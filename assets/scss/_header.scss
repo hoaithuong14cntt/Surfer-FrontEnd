@@ -326,6 +326,7 @@ $height-nav: 80px;
     &_other-img {
       align-self: center;
       width: 100%;
+      justify-content: center;
 
       li {
         border:1px solid $border-item-tab-images;
@@ -333,6 +334,10 @@ $height-nav: 80px;
         width: 64px;
         height: 64px;
         box-sizing: border-box;
+
+        @include breakpoint(small-desktop) {
+          margin-left: 25%;
+        }
       }
 
       li.active {
@@ -347,7 +352,7 @@ $height-nav: 80px;
 
       @include breakpoint(small-tablet) { 
         display: flex;
-
+        
         li {
           margin: 0 5%;
           overflow: hidden;
