@@ -1,7 +1,7 @@
 .about-us {
   position: relative;
   padding: 80px 0;
-  @include breakpoint(phone) {
+  @include breakpoint(tablet) {
     padding: 0;    
   }
 
