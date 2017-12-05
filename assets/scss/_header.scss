@@ -29,6 +29,7 @@ $height-nav: 80px;
       @include breakpoint(tablet) {
         padding: 15px 0;
       }
+
       @include breakpoint(mid-phone) {
         padding: 10px 0;
       }
@@ -61,6 +62,7 @@ $height-nav: 80px;
       @include breakpoint(tablet) {
         width: 80%;
       }
+
       @include breakpoint(small-tablet) {
         display: none;
         position: absolute;
@@ -69,6 +71,7 @@ $height-nav: 80px;
         width: 100%;
         background: black;
       }
+
       @include breakpoint(mid-phone) {
         top: $height-nav - 40;
       }
@@ -98,10 +101,12 @@ $height-nav: 80px;
         text-transform: uppercase;
         padding: 6px 10px;
         display: block;
+
         &:hover {
           color:  $color-white;
           background-color: $hover-menu-item;
         }
+
         @include breakpoint(small-tablet) { 
           color:  white;
         }
@@ -110,6 +115,7 @@ $height-nav: 80px;
 
     &_social {
       width: 15%;
+
       @include breakpoint(tablet) {
         display: none;
       }
@@ -139,12 +145,14 @@ $height-nav: 80px;
       display: none;
       align-self: center;
       cursor: pointer;
+
       @include breakpoint(small-tablet) {
         display: block;
       }
 
       a {
         color: white;
+
         &:hover {
           color:$menu-bar-color;
         }
@@ -156,12 +164,15 @@ $height-nav: 80px;
     padding: $height-nav 0;
     background: url(../img/Hero.png) no-repeat;
     background-size: cover;
+
     @include breakpoint(tablet) {
       padding-top: $height-nav - 25;
     }
+
     @include breakpoint(mid-phone) {
       padding-top: $height-nav - 40;
     }
+
     &_tabs {
       position: absolute;
       top: 50px;
@@ -181,6 +192,7 @@ $height-nav: 80px;
     &_arrow {
       display: flex;
       margin-left: 20px;
+
       a {
         width: 40px;
         height: 40px;
@@ -204,6 +216,7 @@ $height-nav: 80px;
 
     &_title {
       margin-top: 10%;
+
       @include breakpoint(small-tablet) {
         display: none;
       }
@@ -232,6 +245,7 @@ $height-nav: 80px;
       margin-top: 10%;
       background: white;
       box-shadow: 5px 2px 34px #9c9c9c;
+
       @include breakpoint(small-tablet) {
         margin-top: 15px;
       }
@@ -239,6 +253,7 @@ $height-nav: 80px;
 
     &_ctn-wrp {
       display: flex;
+
       @include breakpoint(tablet) {
         flex-direction: column;
       }
@@ -249,6 +264,7 @@ $height-nav: 80px;
       background: url(../img/introduce3.png) no-repeat;
       background-position: inherit;
       background-size: cover;
+
       @include breakpoint(tablet) {
         width: 100%;
       }
@@ -271,6 +287,7 @@ $height-nav: 80px;
       img {
         width: 400px;
         height: 600px;
+
         @include breakpoint(phone) {
           width: 90%;
           height: 500px;
@@ -295,10 +312,12 @@ $height-nav: 80px;
     }
 
     &_main-item {
+
       @include breakpoint(small-tablet) {
         width: auto;
         height: 100%;
       }
+
       @include breakpoint(phone){
         width: 100%;
       }         
@@ -307,6 +326,7 @@ $height-nav: 80px;
     &_other-img {
       align-self: center;
       width: 100%;
+
       li {
         border:1px solid $border-item-tab-images;
         margin-bottom: 3px;
@@ -327,6 +347,7 @@ $height-nav: 80px;
 
       @include breakpoint(small-tablet) { 
         display: flex;
+
         li {
           margin: 0 5%;
           overflow: hidden;
@@ -407,9 +428,11 @@ $height-nav: 80px;
       text-align: left;
       text-transform: uppercase;
       cursor: pointer;
+
       @include breakpoint(mid-phone) {
         padding:0 10%;
       }
+
       a {
         @include breakpoint(mid-phone) { 
           font-size: 0;
@@ -455,6 +478,7 @@ $height-nav: 80px;
         font-weight: 700;
         text-align: left;
         margin-right: 27px;
+
         @include breakpoint(mid-phone) {
           font-size: 20px;
         }
@@ -475,6 +499,7 @@ $height-nav: 80px;
 
       i {
         font-size: 0;
+
         @include breakpoint(mid-phone) {
           font-size: 20px;
           background-color: $bg-color-payment;
@@ -495,6 +520,7 @@ $height-nav: 80px;
       display: inline-block;
       padding-bottom: 5px;
       border-bottom: 2px solid $view-more;
+      
       a {
         color:  $view-more;
         font-family: Montserrat;
