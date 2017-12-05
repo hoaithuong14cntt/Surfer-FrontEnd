@@ -72,7 +72,6 @@
 
     &:last-of-type {
       margin-right: 0;
-      background-color: red;
       @include breakpoint(small-desktop) {
         display: none;
       }
@@ -96,7 +95,7 @@
       }
 
       @include breakpoint(phone) {
-        margin-left: 15%;
+        margin-left: 20%;
       }
     }
 
@@ -166,8 +165,8 @@
       height: 50px;
       display: inline-block;
       @include breakpoint(small-tablet) {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
       }
     }
   }
