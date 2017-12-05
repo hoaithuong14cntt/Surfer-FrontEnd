@@ -432,6 +432,9 @@ a, button {
 .about-us {
   position: relative;
   padding: 80px 0; }
+  @media (max-width: 599px) {
+    .about-us {
+      padding: 0; } }
   .about-us_wrp {
     background: url(../img/overlay.png) no-repeat;
     width: 100%;
@@ -534,12 +537,12 @@ a, button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     border-radius: 50%; }
     .about-us_play button {
       background: none;
-      color: #000000;
-      border: 3px solid #000000;
+      color: #ffffff;
+      border: 3px solid #ffffff;
       padding: 13px;
       border-radius: 50%;
       margin: 15px; }
@@ -572,14 +575,10 @@ a, button {
       .our-team_slide-ctn-wrp {
         width: 100%;
         display: flex;
-        justify-content: center;
-        margin-left: 5%; } }
+        justify-content: center; } }
     @media (max-width: 767px) {
       .our-team_slide-ctn-wrp {
         justify-content: center; } }
-    @media (max-width: 599px) {
-      .our-team_slide-ctn-wrp {
-        margin-left: 15%; } }
   .our-team_slide-item {
     position: relative;
     float: left;
@@ -612,6 +611,7 @@ a, button {
         margin-left: 15%; } }
     @media (max-width: 599px) {
       .our-team_slide-item:first-child {
+        width: 60%;
         margin-left: 20%; } }
     @media (max-width: 991px) {
       .our-team_slide-item {
@@ -684,6 +684,9 @@ a, button {
 
 .latest {
   margin: 50px 0; }
+  @media (max-width: 991px) {
+    .latest {
+      margin: 0; } }
   .latest_header {
     text-align: center; }
     .latest_header h4 {
