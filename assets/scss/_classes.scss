@@ -26,17 +26,17 @@
   background: #c2c2c2;
 
   &-blue {
-    color:  #ffffff;
-    background-color: #00b0ff;
+    color:  $color-white;
+    background-color: $bg-button;
   }
 }
 
 .view-more {
   display: inline-block;
   padding-bottom: 5px;
-  border-bottom: 2px solid #00b0ff;
+  border-bottom: 2px solid $bg-button;
   a {
-    color:  #00b0ff;
+    color:  $bg-button;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 16px;

@@ -112,7 +112,7 @@
     }
 
     &:hover {
-      background-color: #00b0ff;
+      background-color: $bg-button;
       z-index: 2;
       cursor: pointer;
 
@@ -138,7 +138,7 @@
 
   &_name {
     font-family: Montserrat;
-    color:  #00b0ff;
+    color:  $bg-button;
     font-size: 18px;
     font-weight: bold;
   }

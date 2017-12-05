@@ -1,6 +1,6 @@
 .footer {
-  background-color: #000;
-  color: #fff;
+  background-color: $color_black;
+  color: $color-white;
   z-index: -1;
   padding-bottom: 70px;
   padding-top: 2%;
@@ -136,7 +136,7 @@
   }
 
   &_send {
-    background-color: #00b0ff;
+    background-color: $bg-button;
     border-radius: 50%;
     width: 17px;
     height: 17px;

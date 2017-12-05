@@ -55,7 +55,7 @@
   }
 
   &_txt {
-    background: #ffffff;
+    background: $color-white;
     display: flex;
     width: 45%;
 
@@ -79,7 +79,7 @@
 
   &_txt-title {
     font-family: Montserrat;
-    color:  #000000;
+    color:  $color_black;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -93,7 +93,7 @@
 
   &_txt-ctn {
     font-family: PlayfairDisplay;
-    color: #000000;
+    color: $color_black;
     font-size: 18px;
     font-style: italic;
     line-height: 30px;
@@ -142,12 +142,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid #fff;
+    border: 1px solid $color_black;
     border-radius: 50%;
     button {
       background: none;
-      color: #fff;
-      border: 3px solid #fff;
+      color: $color_black;
+      border: 3px solid $color_black;
       padding: 13px;
       border-radius: 50%;
       margin: 15px;
