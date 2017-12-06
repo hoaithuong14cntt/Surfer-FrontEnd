@@ -512,6 +512,9 @@ a, button {
     padding: 5%;
     padding-left: 50%;
     padding-top: 13%; }
+  @media (max-width: 991px) {
+    .about-us_view-more a {
+      text-align: center; } }
   .about-us_clip {
     align-self: flex-end;
     position: relative;

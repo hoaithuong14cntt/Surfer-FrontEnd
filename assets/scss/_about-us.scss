@@ -112,7 +112,11 @@
   }
 
   &_view-more {
-
+    @include breakpoint(tablet) {
+      a {
+        text-align: center;
+      }
+    }
   }
 
   &_clip {

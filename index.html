@@ -441,19 +441,8 @@
   <script src="assets/js/slide.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="assets/js/menu.js" type="text/javascript" charset="utf-8" async defer></script>
   <script>
-    var active = false;
-
     $('.menu_toggle').click(function(){
-       // active = true;
-       
-       active = !active;
-       console.log(active);
-       if(active) {
-        $('.menu_list').show();
-
-      } else {
-        $('.menu_list').hide();
-      }
+      $('.menu_list').toggle();
     });
   </script>
 </body>
