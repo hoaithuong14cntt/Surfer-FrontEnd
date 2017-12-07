@@ -1,10 +1,11 @@
 $(document).ready(function(){
   $('.introduce_tabs-item').click(function(){
-    // var id = $(this).attr('id');
-    // console.log(id);
     $('.introduce_tabs-item').removeClass('active');
     $(this).addClass('active');
-    $("#description").click(function(){
+  });
+});
+ $(document).ready(function(){
+  $("#description").click(function(){
       $(".description").show();
       $(".feature").hide();
       $(".dimension").hide();
@@ -20,5 +21,3 @@ $(document).ready(function(){
       $(".dimension").show();
     });
   });
-});
- 
