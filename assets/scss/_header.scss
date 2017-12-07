@@ -37,11 +37,15 @@ $height-nav: 80px;
     }
 
     &_item {
-
+      &-nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
     }
 
     &_logo {
-      width: 20%;
+      // width: 20%;
       @include breakpoint(small-tablet) {
         flex-grow: 1;
       }
@@ -49,7 +53,7 @@ $height-nav: 80px;
       a {
         font-family: Montserrat;
         color: $color_black;
-        font-size: 25px;
+        font-size: 34px;
         font-weight: 700;
         text-align: left;
         @include breakpoint(mid-phone) {
@@ -59,7 +63,7 @@ $height-nav: 80px;
     }
 
     &_list {
-      width: 65%;
+      // width: 50%;
       @include breakpoint(tablet) {
         width: 80%;
       }
@@ -80,6 +84,7 @@ $height-nav: 80px;
       ul {
         display: flex;
         text-align: center;
+        padding: 5px 0;
         @include breakpoint(small-tablet) { 
           flex-direction: column;
           padding: 5px 0;
@@ -89,7 +94,7 @@ $height-nav: 80px;
     }
 
     &_list-item {
-      width: 20%;
+      // width: 20%;
       @include breakpoint(small-tablet) { 
         width: 100%;
       }
@@ -98,7 +103,7 @@ $height-nav: 80px;
         font-size: 14px;
         font-family: Montserrat;
         color:  $color_black;
-        font-weight: bold;
+        font-weight: 600;
         text-transform: uppercase;
         padding: 6px 10px;
         display: block;
@@ -164,10 +169,10 @@ $height-nav: 80px;
   .introduce {
     padding: $height-nav 0;
     background: url(../img/Hero.png) no-repeat;
-    // background-size: cover;
-    @include breakpoint(big-desktop){
-      background-size: cover;
-    }
+    background-size: 100%;
+    // @include breakpoint(big-desktop){
+    //   background-size: cover;
+    // }
     @include breakpoint(tablet) {
       padding-top: $height-nav - 25;
     }

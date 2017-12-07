@@ -80,63 +80,62 @@ a, button {
   @media (max-width: 480px) {
     #header .menu_wrp {
       padding: 10px 0; } }
-#header .menu_logo {
-  width: 20%; }
-  @media (max-width: 767px) {
-    #header .menu_logo {
-      flex-grow: 1; } }
-  #header .menu_logo a {
-    font-family: Montserrat;
-    color: #000000;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: left; }
-    @media (max-width: 480px) {
-      #header .menu_logo a {
-        font-size: 20px; } }
-#header .menu_list {
-  width: 65%; }
-  @media (max-width: 991px) {
-    #header .menu_list {
-      width: 80%; } }
-  @media (max-width: 767px) {
-    #header .menu_list {
-      display: none;
-      position: absolute;
-      top: 55px;
-      left: 0;
-      width: 100%;
-      background: black; } }
+#header .menu_item-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center; }
+@media (max-width: 767px) {
+  #header .menu_logo {
+    flex-grow: 1; } }
+#header .menu_logo a {
+  font-family: Montserrat;
+  color: #000000;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: left; }
   @media (max-width: 480px) {
-    #header .menu_list {
-      top: 40px; } }
-  #header .menu_list ul {
-    display: flex;
-    text-align: center; }
-    @media (max-width: 767px) {
-      #header .menu_list ul {
-        flex-direction: column;
-        padding: 5px 0;
-        text-align: left; } }
-#header .menu_list-item {
-  width: 20%; }
+    #header .menu_logo a {
+      font-size: 20px; } }
+@media (max-width: 991px) {
+  #header .menu_list {
+    width: 80%; } }
+@media (max-width: 767px) {
+  #header .menu_list {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: black; } }
+@media (max-width: 480px) {
+  #header .menu_list {
+    top: 40px; } }
+#header .menu_list ul {
+  display: flex;
+  text-align: center;
+  padding: 5px 0; }
   @media (max-width: 767px) {
-    #header .menu_list-item {
-      width: 100%; } }
-  #header .menu_list-item a {
-    font-size: 14px;
-    font-family: Montserrat;
-    color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 6px 10px;
-    display: block; }
-    #header .menu_list-item a:hover {
-      color: #ffffff;
-      background-color: #3998FF; }
-    @media (max-width: 767px) {
-      #header .menu_list-item a {
-        color: white; } }
+    #header .menu_list ul {
+      flex-direction: column;
+      padding: 5px 0;
+      text-align: left; } }
+@media (max-width: 767px) {
+  #header .menu_list-item {
+    width: 100%; } }
+#header .menu_list-item a {
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  display: block; }
+  #header .menu_list-item a:hover {
+    color: #ffffff;
+    background-color: #3998FF; }
+  @media (max-width: 767px) {
+    #header .menu_list-item a {
+      color: white; } }
 #header .menu_social {
   width: 15%; }
   @media (max-width: 991px) {
@@ -170,10 +169,8 @@ a, button {
       color: #c2c2c2; }
 #header .introduce {
   padding: 80px 0;
-  background: url(../img/Hero.png) no-repeat; }
-  @media (min-width: 1921px) {
-    #header .introduce {
-      background-size: cover; } }
+  background: url(../img/Hero.png) no-repeat;
+  background-size: 100%; }
   @media (max-width: 991px) {
     #header .introduce {
       padding-top: 55px; } }
