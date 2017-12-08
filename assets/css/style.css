@@ -282,6 +282,9 @@ a, button {
     align-self: center;
     width: 100%;
     justify-content: center; }
+    @media (min-width: 1600px) {
+      #header .introduce_other-img {
+        padding-left: 15%; } }
     #header .introduce_other-img li {
       border: 1px solid #CBCBCB;
       margin-bottom: 3px;

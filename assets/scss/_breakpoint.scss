@@ -5,7 +5,7 @@
       @content;
     }
   }
-  @if $point == large-desktop {
+  @else if $point == large-desktop {
     @media (min-width: 1600px) { // width >= 1600
       @content;
     }

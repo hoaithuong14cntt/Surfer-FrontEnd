@@ -4,7 +4,6 @@ $height-nav: 80px;
     background: $bg-menu;
     position: fixed;
     width: 100%;
-    // background-size: cover;
     z-index: 10;
   }
 
@@ -170,9 +169,6 @@ $height-nav: 80px;
     padding: $height-nav 0;
     background: url(../img/Hero.png) no-repeat;
     background-size: 100%;
-    // @include breakpoint(big-desktop){
-    //   background-size: cover;
-    // }
     @include breakpoint(tablet) {
       padding-top: $height-nav - 25;
     }
@@ -330,11 +326,14 @@ $height-nav: 80px;
         width: 100%;
       }         
     }
-
+    
     &_other-img {
       align-self: center;
       width: 100%;
       justify-content: center;
+      @include breakpoint(large-desktop) {
+        padding-left: 15%;
+      } 
 
       li {
         border:1px solid $border-item-tab-images;
@@ -342,7 +341,6 @@ $height-nav: 80px;
         width: 64px;
         height: 64px;
         box-sizing: border-box;
-        // margin-left: 50%;
         @include breakpoint(small-desktop) {
           margin-left: 25%;
         }
@@ -544,12 +542,3 @@ $height-nav: 80px;
   }
 }
 
-
-
-
-
-// @media screen and (min-width: 1270px) {
-//   #header .introduce{
-//     background-size: cover;
-//   }
-// }
